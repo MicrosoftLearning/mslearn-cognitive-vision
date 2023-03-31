@@ -328,7 +328,7 @@ In this task, you use the **Image retrieval** functionality of Cognitive Service
 
     The try-it-out experience in Vision Studio uses cosine distance to compare the vectorization of your search text to measure similarity with vectorized images. Moving the slider towards **Least relevant** increases the allowable similarity distance, resulting in more images appearing in the results list.
 
-    As you move the slider towards **Least relevant**, more images will appear in the search results. Moving the slider to **Least relevant** will result in displaying all images in the photo album.
+    As you move the slider towards **Least relevant**, more images will appear in the search results. Moving the slider to **Least relevant** will display all pictures in the photo album.
 
 7. Try out a few other queries, such as "elephants on the savannah" or "sunsets while mountain biking."
 
@@ -423,6 +423,6 @@ TODO:
     }
     ```
 
-    The caption should be, "a woman and a girl taking a picture." Using the **Background removal** feature of Image Analysis 4.0, you can reduce the information in the photo down to the main subjects, eliminating any background noise from the picture. By removing the background, Image Analysis can identify different details to be the focus, providing better context into what the photo's subjects are doing.
+    The caption should be, "a woman and a girl taking a picture." Using the **Background removal** feature of Image Analysis 4.0, you can reduce the information in the photo down to the main subjects, eliminating any background noise from the picture. By removing the background, Image Analysis can identify different details as the focus, providing better context into what the photo's subjects are doing.
 
 Congratulations! You have successfully used Vision Studio to try out the new features of Image Analysis 4.0.
