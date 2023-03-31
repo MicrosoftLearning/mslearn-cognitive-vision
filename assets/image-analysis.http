@@ -1,0 +1,33 @@
+@resourceRegion = eastus
+@apiVersion = 2023-02-01-preview
+@subscriptionKey = [INSERT YOUR COGNITIVE SERVICES SUBSCRIPTION KEY]
+
+### Generate a caption for the original image
+
+POST https://{{resourceRegion}}.api.cognitive.microsoft.com/computervision/imageanalysis:analyze?api-version={{apiVersion}}&mode=backgroundRemoval&features=caption HTTP/1.1
+Ocp-Apim-Subscription-Key: {{subscriptionKey}}
+Content-Type: application/json
+
+{
+    "url": "https://raw.githubusercontent.com/MicrosoftLearning/AI-900-AIFundamentals/main/data/vision/store-camera-1.jpg"
+}
+
+### Background removal
+
+POST https://{{resourceRegion}}.api.cognitive.microsoft.com/computervision/imageanalysis:segment?api-version={{apiVersion}}&mode=backgroundRemoval HTTP/1.1
+Ocp-Apim-Subscription-Key: {{subscriptionKey}}
+Content-Type: application/json
+
+{
+    "url": "https://raw.githubusercontent.com/MicrosoftLearning/AI-900-AIFundamentals/main/data/vision/store-camera-1.jpg"
+}
+
+### Generate a caption for the image with the background removed
+
+POST https://{{resourceRegion}}.api.cognitive.microsoft.com/computervision/imageanalysis:analyze?api-version={{apiVersion}}&mode=backgroundRemoval&features=caption HTTP/1.1
+Ocp-Apim-Subscription-Key: {{subscriptionKey}}
+Content-Type: application/json
+
+{
+    "url": "https://raw.githubusercontent.com/MicrosoftLearning/AI-900-AIFundamentals/main/data/vision/store-background-removal.jpg"
+}
