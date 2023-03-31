@@ -1,0 +1,455 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "width": 1024,
+      "height": 768,
+      "file_name": "image17.jpg",
+      "coco_url": "AmlDatastore://evaluation_images/image17.jpg",
+      "absolute_url": "https://stmslearnvision.blob.core.windows.net/evaluation-images/image17.jpg",
+      "date_captured": "2023-03-31T21:55:51.2655215Z"
+    },
+    {
+      "id": 2,
+      "width": 1024,
+      "height": 768,
+      "file_name": "image02.jpg",
+      "coco_url": "AmlDatastore://evaluation_images/image02.jpg",
+      "absolute_url": "https://stmslearnvision.blob.core.windows.net/evaluation-images/image02.jpg",
+      "date_captured": "2023-03-31T21:55:51.2655283Z"
+    },
+    {
+      "id": 3,
+      "width": 1024,
+      "height": 768,
+      "file_name": "image53.jpg",
+      "coco_url": "AmlDatastore://evaluation_images/image53.jpg",
+      "absolute_url": "https://stmslearnvision.blob.core.windows.net/evaluation-images/image53.jpg",
+      "date_captured": "2023-03-31T21:55:51.265541Z"
+    },
+    {
+      "id": 4,
+      "width": 1024,
+      "height": 768,
+      "file_name": "image08.jpg",
+      "coco_url": "AmlDatastore://evaluation_images/image08.jpg",
+      "absolute_url": "https://stmslearnvision.blob.core.windows.net/evaluation-images/image08.jpg",
+      "date_captured": "2023-03-31T21:55:51.2655332Z"
+    },
+    {
+      "id": 5,
+      "width": 1024,
+      "height": 768,
+      "file_name": "image45.jpg",
+      "coco_url": "AmlDatastore://evaluation_images/image45.jpg",
+      "absolute_url": "https://stmslearnvision.blob.core.windows.net/evaluation-images/image45.jpg",
+      "date_captured": "2023-03-31T21:55:51.2655425Z"
+    },
+    {
+      "id": 6,
+      "width": 1024,
+      "height": 768,
+      "file_name": "image67.jpg",
+      "coco_url": "AmlDatastore://evaluation_images/image67.jpg",
+      "absolute_url": "https://stmslearnvision.blob.core.windows.net/evaluation-images/image67.jpg",
+      "date_captured": "2023-03-31T21:55:51.2655363Z"
+    },
+    {
+      "id": 7,
+      "width": 1024,
+      "height": 768,
+      "file_name": "image23.jpg",
+      "coco_url": "AmlDatastore://evaluation_images/image23.jpg",
+      "absolute_url": "https://stmslearnvision.blob.core.windows.net/evaluation-images/image23.jpg",
+      "date_captured": "2023-03-31T21:55:51.2655348Z"
+    },
+    {
+      "id": 8,
+      "width": 1024,
+      "height": 768,
+      "file_name": "image63.jpg",
+      "coco_url": "AmlDatastore://evaluation_images/image63.jpg",
+      "absolute_url": "https://stmslearnvision.blob.core.windows.net/evaluation-images/image63.jpg",
+      "date_captured": "2023-03-31T21:55:51.2655463Z"
+    },
+    {
+      "id": 9,
+      "width": 1024,
+      "height": 768,
+      "file_name": "image13.jpg",
+      "coco_url": "AmlDatastore://evaluation_images/image13.jpg",
+      "absolute_url": "https://stmslearnvision.blob.core.windows.net/evaluation-images/image13.jpg",
+      "date_captured": "2023-03-31T21:55:51.26553Z"
+    },
+    {
+      "id": 10,
+      "width": 1024,
+      "height": 768,
+      "file_name": "image58.jpg",
+      "coco_url": "AmlDatastore://evaluation_images/image58.jpg",
+      "absolute_url": "https://stmslearnvision.blob.core.windows.net/evaluation-images/image58.jpg",
+      "date_captured": "2023-03-31T21:55:51.2655378Z"
+    },
+    {
+      "id": 11,
+      "width": 1024,
+      "height": 768,
+      "file_name": "image47.jpg",
+      "coco_url": "AmlDatastore://evaluation_images/image47.jpg",
+      "absolute_url": "https://stmslearnvision.blob.core.windows.net/evaluation-images/image47.jpg",
+      "date_captured": "2023-03-31T21:55:51.2655447Z"
+    },
+    {
+      "id": 12,
+      "width": 1024,
+      "height": 768,
+      "file_name": "image43.jpg",
+      "coco_url": "AmlDatastore://evaluation_images/image43.jpg",
+      "absolute_url": "https://stmslearnvision.blob.core.windows.net/evaluation-images/image43.jpg",
+      "date_captured": "2023-03-31T21:55:51.2655316Z"
+    },
+    {
+      "id": 13,
+      "width": 1024,
+      "height": 768,
+      "file_name": "image19.jpg",
+      "coco_url": "AmlDatastore://evaluation_images/image19.jpg",
+      "absolute_url": "https://stmslearnvision.blob.core.windows.net/evaluation-images/image19.jpg",
+      "date_captured": "2023-03-31T21:55:51.2655394Z"
+    },
+    {
+      "id": 14,
+      "width": 1024,
+      "height": 768,
+      "file_name": "image06.jpg",
+      "coco_url": "AmlDatastore://evaluation_images/image06.jpg",
+      "absolute_url": "https://stmslearnvision.blob.core.windows.net/evaluation-images/image06.jpg",
+      "date_captured": "2023-03-31T21:55:51.2655255Z"
+    },
+    {
+      "id": 15,
+      "width": 1024,
+      "height": 768,
+      "file_name": "image52.jpg",
+      "coco_url": "AmlDatastore://evaluation_images/image52.jpg",
+      "absolute_url": "https://stmslearnvision.blob.core.windows.net/evaluation-images/image52.jpg",
+      "date_captured": "2023-03-31T21:55:51.2655478Z"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "image_id": 1,
+      "area": 0.097,
+      "bbox": [
+        0.45393103043997274,
+        0.15973968991587084,
+        0.2642306006458901,
+        0.36749425786579126
+      ]
+    },
+    {
+      "id": 2,
+      "category_id": 2,
+      "image_id": 1,
+      "area": 0.42,
+      "bbox": [
+        0.11303394520591746,
+        0.31469304673288995,
+        0.6425829545212313,
+        0.6535684499701568
+      ]
+    },
+    {
+      "id": 3,
+      "category_id": 3,
+      "image_id": 2,
+      "area": 0.181,
+      "bbox": [
+        0.568663801372783,
+        0.36400101519866984,
+        0.37978147582175137,
+        0.47704800566308553
+      ]
+    },
+    {
+      "id": 4,
+      "category_id": 3,
+      "image_id": 2,
+      "area": 0.129,
+      "bbox": [
+        0.02267926516669509,
+        0.3367604060084129,
+        0.3059274379423175,
+        0.4200786401489313
+      ]
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "image_id": 2,
+      "area": 0.069,
+      "bbox": [
+        0.34625993549091916,
+        0.2542782896700205,
+        0.2226397630137278,
+        0.3103503634464529
+      ]
+    },
+    {
+      "id": 6,
+      "category_id": 2,
+      "image_id": 3,
+      "area": 0.313,
+      "bbox": [
+        0.1369853728790075,
+        0.3256459567914393,
+        0.7154878249435113,
+        0.43725696960976573
+      ]
+    },
+    {
+      "id": 7,
+      "category_id": 1,
+      "image_id": 4,
+      "area": 0.069,
+      "bbox": [
+        0.1299729080512449,
+        0.1554365309870964,
+        0.23028347957345668,
+        0.2993872392280582
+      ]
+    },
+    {
+      "id": 8,
+      "category_id": 3,
+      "image_id": 4,
+      "area": 0.073,
+      "bbox": [
+        0.47032658887917805,
+        0.0683008656278422,
+        0.22721390249296552,
+        0.3192561116203388
+      ]
+    },
+    {
+      "id": 9,
+      "category_id": 3,
+      "image_id": 4,
+      "area": 0.133,
+      "bbox": [
+        0.666199313342002,
+        0.129071563956628,
+        0.32301977972054063,
+        0.4104737771430196
+      ]
+    },
+    {
+      "id": 10,
+      "category_id": 2,
+      "image_id": 4,
+      "area": 0.463,
+      "bbox": [
+        0.019782884709669168,
+        0.44819811117979763,
+        0.8688285380073328,
+        0.5323882126819008
+      ]
+    },
+    {
+      "id": 11,
+      "category_id": 1,
+      "image_id": 5,
+      "area": 0.454,
+      "bbox": [
+        0.24076716496394232,
+        0.1558152105869391,
+        0.5824003718449519,
+        0.779502923427484
+      ]
+    },
+    {
+      "id": 12,
+      "category_id": 3,
+      "image_id": 6,
+      "area": 0.526,
+      "bbox": [
+        0.24277237167462484,
+        0.11963390230644612,
+        0.6231318079595839,
+        0.8444444518460096
+      ]
+    },
+    {
+      "id": 13,
+      "category_id": 3,
+      "image_id": 7,
+      "area": 0.541,
+      "bbox": [
+        0.2288373710351296,
+        0.04945429740791269,
+        0.6606427826302439,
+        0.8185871951739426
+      ]
+    },
+    {
+      "id": 14,
+      "category_id": 3,
+      "image_id": 8,
+      "area": 0.563,
+      "bbox": [
+        0.23054546649639424,
+        0.09618070162259615,
+        0.6574907038762019,
+        0.8563572340745192
+      ]
+    },
+    {
+      "id": 15,
+      "category_id": 3,
+      "image_id": 9,
+      "area": 0.165,
+      "bbox": [
+        0.5142402596883526,
+        0.18738753321822418,
+        0.3631447743914138,
+        0.45370953860419505
+      ]
+    },
+    {
+      "id": 16,
+      "category_id": 2,
+      "image_id": 9,
+      "area": 0.244,
+      "bbox": [
+        0.06491142991132333,
+        0.24764852276603003,
+        0.40427539195728174,
+        0.6034716597032742
+      ]
+    },
+    {
+      "id": 17,
+      "category_id": 2,
+      "image_id": 10,
+      "area": 0.475,
+      "bbox": [
+        0.07305200428461801,
+        0.15009374822362437,
+        0.5971378258761084,
+        0.7955862394838562
+      ]
+    },
+    {
+      "id": 18,
+      "category_id": 1,
+      "image_id": 11,
+      "area": 0.498,
+      "bbox": [
+        0.15860389122596155,
+        0.11189803685897436,
+        0.6181316669170673,
+        0.8057841296073718
+      ]
+    },
+    {
+      "id": 19,
+      "category_id": 1,
+      "image_id": 12,
+      "area": 0.458,
+      "bbox": [
+        0.19271171954936903,
+        0.15623900867581855,
+        0.5885860760572987,
+        0.7778502391001592
+      ]
+    },
+    {
+      "id": 20,
+      "category_id": 3,
+      "image_id": 13,
+      "area": 0.607,
+      "bbox": [
+        0.19099524108969987,
+        0.0490441211736869,
+        0.6658878924901944,
+        0.9122478767870338
+      ]
+    },
+    {
+      "id": 21,
+      "category_id": 2,
+      "image_id": 14,
+      "area": 0.451,
+      "bbox": [
+        0.049656138088335605,
+        0.4642305673388472,
+        0.8650452742635147,
+        0.5209146025181901
+      ]
+    },
+    {
+      "id": 22,
+      "category_id": 1,
+      "image_id": 14,
+      "area": 0.064,
+      "bbox": [
+        0.3897662611645208,
+        0.15579624705121647,
+        0.21535084972928037,
+        0.2983010965566735
+      ]
+    },
+    {
+      "id": 23,
+      "category_id": 3,
+      "image_id": 14,
+      "area": 0.091,
+      "bbox": [
+        0.027555083187670533,
+        0.16972580754035926,
+        0.2635762837866644,
+        0.3465713285868577
+      ]
+    },
+    {
+      "id": 24,
+      "category_id": 3,
+      "image_id": 14,
+      "area": 0.117,
+      "bbox": [
+        0.6608198928312585,
+        0.19821443163085492,
+        0.3108448897670105,
+        0.3779736527967258
+      ]
+    },
+    {
+      "id": 25,
+      "category_id": 2,
+      "image_id": 15,
+      "area": 0.571,
+      "bbox": [
+        0.04777972881610577,
+        0.13895100911458333,
+        0.7973795259915865,
+        0.71601806640625
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "apple"
+    },
+    {
+      "id": 2,
+      "name": "banana"
+    },
+    {
+      "id": 3,
+      "name": "orange"
+    }
+  ]
+}
