@@ -58,7 +58,13 @@ Before using Vision Studio to try out the capabilities of Image Analysis 4.0, yo
     az storage container create --account-name stmslearnvisionSUFFIX --name training-images --auth-mode login
     ```
 
-9. You can now close the Azure Cloud Shell pane in your browser window.
+9. Repeat the above steps to create a third container for hosting the images you will use in the next exercise to evaluate your custom model. Again, replace the `SUFFIX` token in the Storage Account name with your initials or another value to ensure the account name is globally unique before running the command.
+
+    ```azurecli
+    az storage container create --account-name stmslearnvisionSUFFIX --name evaluation-images --auth-mode login
+    ```
+
+10. You can now close the Azure Cloud Shell pane in your browser window.
 
 ## Configure a CORS rule on the storage account
 
@@ -111,6 +117,10 @@ Some of the images you download need to be added to the Azure Storage account yo
 5. Select **Upload** to upload all files into the `photo-album` container.
 
 6. Repeat steps 3 through 5 above, this time selecting the `training-images` container and retrieving all of the images from the `training-images` folder in your download location.
+
+7. Repeat steps 3 through 5 above, this time selecting the `evaluation-images` container and retrieving all of the files from the `evaluation-images` folder in your download location.
+
+    **Note**: The `evaluation-images` folder also contains a JSON file named `eval-labels.json`. Make sure to upload this file as well. It is the COCO file describing the labels applied to the evaluation image dataset.
 
 ## Connect your Cognitive Services account to Vision Studio
 
