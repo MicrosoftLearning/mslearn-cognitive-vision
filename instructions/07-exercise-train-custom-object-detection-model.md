@@ -254,6 +254,12 @@ With your images labeled and the COCO annotation file imported, you can use Visi
 
     ![A status of Succeeded is highlighted for the fruitdetector custom model.](../media/07-vision-studio-custom-model-training-succeeded.png)
 
+8. Once your model training is finished, select the model on the Custom models page in Vision Studio.
+
+9. On the `fruitdetector` page, you can review the model's overall performance and evaluation results.
+
+    ![The evaluation results page for the fruitdetector model is displayed.](../media/07-vision-studio-fruitdetector-results.png)
+
 ## Test your custom model in Vision Studio
 
 Once your custom model is created and trained, it belongs to your Computer Vision resource, and you can call it using the Analyze Image API. It will also be available to test from within Vision Studio.
