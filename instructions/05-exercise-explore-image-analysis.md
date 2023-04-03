@@ -90,9 +90,7 @@ Before moving on to trying out the Image Analysis 4.0 features from Vision Studi
 
 You will use several images for the exercises below, which you must retrieve from a local folder. In this task, you will download a zip file from a GitHub repository and unzip it to a local directory.
 
-1. Download the zip file containing sample images from here: <https://github.com/kylebunting/ms-learn-vision/blob/main/assets/images.zip?raw=true>
-
-    TODO: Add the link to the zip file in the final GitHub repo.
+1. Download the zip file containing sample images from here: <https://github.com/MicrosoftLearning/mslearn-cognitive-vision/blob/main/assets/images.zip?raw=true>
 
 2. Unzip the `images.zip` file to an easily accessible location on your local machine.
 
@@ -348,20 +346,13 @@ The **Background removal** feature of Image Analysis 4.0 is useful when extracti
 
 For this task, you will use the `REST Client` extension of Visual Studio Code to make calls to the endpoint.
 
-TODO:
-
-- Update image URLs in the `image-analysis.http` file to the correct paths in GitHub.
-- Update screenshots of the `image-analysis.http` file sections once the correct image URLs have been added.
-
 1. [Download Visual Studio Code](https://code.visualstudio.com/download) if you don't already have it installed, and then start Visual Studio Code.
 
 2. In Visual Studio Code, select the Extensions icon in the left-hand toolbar, enter "REST Client" into the **Search Extensions in Marketplace** box, and then select **Install** for the **REST Client** extension.
 
     ![The Visual Studio Code extensions tab is displayed, with REST Client highlighted in the search bar and the REST Client extension highlighted in the search results. The Install button for the extension is highlighted.](../media/05-vs-code-extensions-rest-client.png)
 
-3. Download the `image-analysis.http` file from here: <https://github.com/kylebunting/ms-learn-vision/raw/main/assets/image-analysis.http>
-
-    TODO: Add the final GitHub link to the `image-analysis.http` file
+3. Download the `image-analysis.http` file from here: <https://github.com/MicrosoftLearning/mslearn-cognitive-vision/raw/main/assets/image-analysis.http>
 
     **Note**: If the file opens in the browser window, copy its raw text and paste it into a new file in Visual Studio Code named `image-analysis.http`. Alternatively, you can right-click on the page in the browser, select **Save As**, and then download the file that way. This method may require manually renaming the file to remove the `.txt` extension.
 

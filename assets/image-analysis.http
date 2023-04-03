@@ -9,7 +9,7 @@ Ocp-Apim-Subscription-Key: {{subscriptionKey}}
 Content-Type: application/json
 
 {
-    "url": "https://raw.githubusercontent.com/kylebunting/ms-learn-vision/main/assets/store.jpg"
+    "url": "https://raw.githubusercontent.com/MicrosoftLearning/mslearn-cognitive-vision/main/assets/images/try-it-out/store.jpg"
 }
 
 ### Background removal
@@ -19,7 +19,7 @@ Ocp-Apim-Subscription-Key: {{subscriptionKey}}
 Content-Type: application/json
 
 {
-    "url": "https://raw.githubusercontent.com/kylebunting/ms-learn-vision/main/assets/store.jpg"
+    "url": "https://raw.githubusercontent.com/MicrosoftLearning/mslearn-cognitive-vision/main/assets/images/try-it-out/store.jpg"
 }
 
 ### Generate a caption for the image with the background removed
@@ -29,5 +29,5 @@ Ocp-Apim-Subscription-Key: {{subscriptionKey}}
 Content-Type: application/json
 
 {
-    "url": "https://raw.githubusercontent.com/kylebunting/ms-learn-vision/main/assets/store-background-removal.png"
+    "url": "https://raw.githubusercontent.com/MicrosoftLearning/mslearn-cognitive-vision/main/assets/images/try-it-out/store-background-removal.png"
 }
