@@ -227,7 +227,7 @@ You are ready to use [Vision Studio](https://portal.vision.cognitive.azure.com/)
     }
     ```
 
-### Tagging images
+## Tagging images
 
 The next feature you will try is the **Extract Tags** functionality of Image Analysis 4.0. Extract tags is based on thousands of recognizable objects, including living beings, scenery, and actions.
 
@@ -251,7 +251,7 @@ The next feature you will try is the **Extract Tags** functionality of Image Ana
 
     Notice in the list of tags that it includes not only objects, but actions, such as `shopping`, `selling`, and `standing`.
 
-### Object detection
+## Object detection
 
 In this task, you use the **Object detection** feature of Cognitive Services for Vision. Object detection detects and extracts bounding boxes based on thousands of recognizable objects and living beings.
 
@@ -275,7 +275,7 @@ In this task, you use the **Object detection** feature of Cognitive Services for
 
     The threshold slider specifies that only objects identified with a confidence score or probability greater than the threshold should be displayed.
 
-### OCR
+## OCR
 
 In this task, you use the Read API's **Extract text** capabilities to extract printed and handwritten text in supported languages from images. The optical character recognition (OCR) capability supports images and documents with mixed languages and does not require specifying the language.
 
@@ -306,7 +306,7 @@ In this task, you use the Read API's **Extract text** capabilities to extract pr
     }
     ```
 
-### Image retrieval
+## Image retrieval
 
 In this task, you use the **Image retrieval** functionality of Cognitive Services for Vision. Image retrieval in Image Analysis 4.0 uses vectorization to match your search text more efficiently with images in a photo album in Azure Blob storage. Image retrieval enables you to search pictures for content using natural language queries.
 
@@ -340,7 +340,7 @@ In this task, you use the **Image retrieval** functionality of Cognitive Service
 
 7. Try out a few other queries, such as "elephants on the savannah" or "sunsets while mountain biking."
 
-### Background removal
+## Background removal
 
 The **Background removal** feature of Image Analysis 4.0 is useful when extracting information and content from images with distracting or noisy backgrounds. You need to focus your analysis on the most critical visual features. Background removal is unavailable as a try-it-out experience in Vision Studio, so you will access it via the [Segment](https://centraluseuap.dev.cognitive.microsoft.com/docs/services/unified-vision-apis-public-preview-2023-02-01-preview/operations/63e6b6d9217d201194bbecbd) API endpoint.
 
