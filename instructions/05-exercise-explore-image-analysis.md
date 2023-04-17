@@ -128,9 +128,9 @@ Some of the images you download need to be added to the Azure Storage account yo
 
     **Note**: The `evaluation-images` folder also contains a JSON file named `eval-labels.json`. Make sure to upload this file as well. It is the COCO file describing the labels applied to the evaluation image dataset.
 
-## Connect your Cognitive Services account to Vision Studio
+## Connect your Cognitive Services resource to Vision Studio
 
-In this task, you will connect the Cognitive Services account you provisioned above to Vision Studio so it can be used for trying out the various Image Analysis 4.0 features.
+In this task, you will connect the Cognitive Services resource you provisioned above to Vision Studio so it can be used for trying out the various Image Analysis 4.0 features.
 
 1. In a web browser, navigate to [Vision Studio](https://portal.vision.cognitive.azure.com/).
 
