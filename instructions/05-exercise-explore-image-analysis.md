@@ -126,11 +126,13 @@ In this task, you will connect the Cognitive Services account you provisioned ab
 
 1. In a web browser, navigate to [Vision Studio](https://portal.vision.cognitive.azure.com/).
 
-2. On the Vision Studio home page, select **View all resources** under the **Getting started with Vision** heading.
+2. Sign in with your account and making sure you are using the same directory as the one where you have created the `cog-ms-learn-vision-SUFFIX` Cognitive Services resource.
+
+3. On the Vision Studio home page, select **View all resources** under the **Getting started with Vision** heading.
 
     ![The View all resource link is highlighted under Getting started with Vision in Vision Studio.](../media/05-vision-studio-view-all-resources.png)
 
-3. On the **Select a resource to work with** page, hover your mouse cursor over the `cog-ms-learn-vision-SUFFIX` resource you created above in the list and then check the box to the left of the resource name, then select **Select as default resource**.
+4. On the **Select a resource to work with** page, hover your mouse cursor over the `cog-ms-learn-vision-SUFFIX` resource you created above in the list and then check the box to the left of the resource name, then select **Select as default resource**.
 
     ![The Select a resource to work with dialog is displayed with the cog-ms-learn-vision-SUFFIX Cognitive Services resource highlighted and checked. The Select as default resource button is highlighted.](../media/05-vision-studio-select-default-resource.png)
 
