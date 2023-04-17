@@ -162,9 +162,9 @@ Using your Azure Machine Learning data-labeling project created, you will pre-la
 
     ![An image with bounding boxes around three objects, two oranges and an apple, is displayed.](../media/07-aml-studio-data-labeling-apply-labels.png)
 
-9. Continue labeling images in the dataset, adding tags and bounding boxes to at least twelve photos. The required number of pre-labeled images varies by dataset, but twelve should meet this dataset's minimum number of pre-labeled photos. There are 68 images in the `training_images` dataset. You will see a tasks remaining value of **56/68** once you have submitted the twelfth image.
+9. Continue labeling images in the dataset, adding tags and bounding boxes to at least twelve photos. The required number of pre-labeled images varies by dataset, but twelve should meet this dataset's minimum number of pre-labeled photos. There are 53 images in the `training_images` dataset. You will see a tasks remaining value of **41/53** once you have submitted the twelfth image.
 
-    ![A tasks remaining value of 56/68 is highlighted above Tags.](../media/07-aml-studio-labeling-tasks-remaining.png)
+    ![A tasks remaining value of 41/53 is highlighted above Tags.](../media/07-aml-studio-labeling-tasks-remaining.png)
 
 10. Select the **Custom_Object_Detection_Labeling** project in the breadcrumbs at the top of Azure Machine Learning Studio to return to your data-labeling project page.
 

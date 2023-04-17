@@ -100,7 +100,7 @@ Some of the images you download need to be added to the Azure Storage account yo
 
 1. In a web browser, navigate to the [Azure portal](https://portal.azure.com/) and browser to the Storage Account resource in the `rg-ms-learn-vision` resource group you created above, then select **Containers** under **Data storage** in the left-hand navigation menu.
 
-2. Select the' photo-album' container on the **Containers** page.
+2. Select the 'photo-album' container on the **Containers** page.
 
     ![On the Azure Storage Account page, Containers is highlighted and selected in the left-hand navigation menu, and the photo-album container is highlighted in the containers list.](../media/05-azure-portal-storage-account-containers-photo-album.png)
 
@@ -114,9 +114,17 @@ Some of the images you download need to be added to the Azure Storage account yo
 
 5. Select **Upload** to upload all files into the `photo-album` container.
 
+    When the upload completes, you should receive a message that 109 blobs were successfully uploaded.
+
+    ![A dialog with the message the 109 blobs were successfully uploaded is displayed.](../media/05-azure-portal-storage-account-upload-photo-album-success.png)
+
 6. Repeat steps 3 through 5 above, this time selecting the `training-images` container and retrieving all of the images from the `training-images` folder in your download location.
 
+    When the upload has finished, you should receive a message that 53 blobs were successfully uploaded.
+
 7. Repeat steps 3 through 5 above, this time selecting the `evaluation-images` container and retrieving all of the files from the `evaluation-images` folder in your download location.
+
+    When the upload completes, you should see a message that 16 blobs were successfully uploaded.
 
     **Note**: The `evaluation-images` folder also contains a JSON file named `eval-labels.json`. Make sure to upload this file as well. It is the COCO file describing the labels applied to the evaluation image dataset.
 
