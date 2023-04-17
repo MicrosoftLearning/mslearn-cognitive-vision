@@ -4,7 +4,7 @@ title: Explore the new features of Image Analysis 4.0
 description: Vision Studio is a set of UI-based tools that allows you to explore, build, and integrate features from Azure Computer Vision.
 durationInMinutes: 45
 ---
-The Image Analysis 4.0 features available in Cognitive Services for Vision include numerous capabilities for understanding image content and context and extracting information from images. Vision Studio allows you to try out many of the capabilities of Image Analysis 4.0 quickly and easily in a web browser. In this exercise, you will use Vision Studio to analyze images using the built-in try-it-out experiences. You will also use Visual Studio Code to make a few calls to the Image Analysis 4.0 APIs to explore features not available in Vision Studio.
+The Image Analysis 4.0 features available in Azure Computer Vision include numerous capabilities for understanding image content and context and extracting information from images. Vision Studio allows you to try out many of the capabilities of Image Analysis 4.0 quickly and easily in a web browser. In this exercise, you will use Vision Studio to analyze images using the built-in try-it-out experiences. You will also use Visual Studio Code to make a few calls to the Image Analysis 4.0 APIs to explore features not available in Vision Studio.
 
 ## Provision Azure resources
 
@@ -32,7 +32,7 @@ Before using Vision Studio to try out the capabilities of Image Analysis 4.0, yo
     az group create --name rg-ms-learn-vision --location eastus
     ```
 
-5. Once your resource group has been created, use the below Azure CLI command to create an Azure Cognitive Services account. Before running the command, replace the `SUFFIX` token in the Cognitive Services account name with your initials or another value to ensure the resource name is globally unique.
+5. Once your resource group has been created, use the below Azure CLI command to create an Azure Cognitive Services account. Before running the command, replace the `SUFFIX` token in the Cognitive Services resource name with your initials or another value to ensure the resource name is globally unique.
 
     ```azurecli
     az cognitiveservices account create --name cog-ms-learn-vision-SUFFIX --resource-group rg-ms-learn-vision --kind CognitiveServices --sku S0 --location eastus --yes
@@ -146,7 +146,7 @@ In this task, you will connect the Cognitive Services resource you provisioned a
 
 ## Generate captions for an image
 
-You are ready to use [Vision Studio](https://portal.vision.cognitive.azure.com/) to examine Image Analysis 4.0 capabilities. In this task, you look at the image captioning functionality of Cognitive Services for Vision. Image captions are available through the **Caption** and **Dense Captions** features in Image Analysis 4.0.
+You are ready to use [Vision Studio](https://portal.vision.cognitive.azure.com/) to examine Image Analysis 4.0 capabilities. In this task, you look at the image captioning functionality of Azure Computer Vision. Image captions are available through the **Caption** and **Dense Captions** features in Image Analysis 4.0.
 
 1. In a web browser, navigate to [Vision Studio](https://portal.vision.cognitive.azure.com/).
 
@@ -263,7 +263,7 @@ The next feature you will try is the **Extract Tags** functionality of Image Ana
 
 ## Object detection
 
-In this task, you use the **Object detection** feature of Cognitive Services for Vision. Object detection detects and extracts bounding boxes based on thousands of recognizable objects and living beings.
+In this task, you use the **Object detection** feature of Image Analysis. Object detection detects and extracts bounding boxes based on thousands of recognizable objects and living beings.
 
 1. Return to the home page of Vision Studio, then select the **Detect common objects in images** tile under the **Image analysis** tab.
 
@@ -318,7 +318,7 @@ In this task, you use the Read API's **Extract text** capabilities to extract pr
 
 ## Image retrieval
 
-In this task, you use the **Image retrieval** functionality of Cognitive Services for Vision. Image retrieval in Image Analysis 4.0 uses vectorization to match your search text more efficiently with images in a photo album in Azure Blob storage. Image retrieval enables you to search pictures for content using natural language queries.
+In this task, you use the **Image retrieval** functionality of Azure Computer Vision. Image retrieval in Image Analysis 4.0 uses vectorization to match your search text more efficiently with images in a photo album in Azure Blob storage. Image retrieval enables you to search pictures for content using natural language queries.
 
 1. Return to the home page of Vision Studio, then select the **Search photos with natural language** tile under the **Image analysis** tab.
 
