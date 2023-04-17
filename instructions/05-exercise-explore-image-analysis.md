@@ -2,7 +2,7 @@
 uid: learn.wwl.explore-identity-azure-active-directory.exercise-explore-image-analysis
 title: Explore the new features of Image Analysis 4.0
 description: Vision Studio is a set of UI-based tools that allows you to explore, build, and integrate features from Azure Computer Vision.
-durationInMinutes: 15
+durationInMinutes: 45
 ---
 The Image Analysis 4.0 features available in Cognitive Services for Vision include numerous capabilities for understanding image content and context and extracting information from images. Vision Studio allows you to try out many of the capabilities of Image Analysis 4.0 quickly and easily in a web browser. In this exercise, you will use Vision Studio to analyze images using the built-in try-it-out experiences. You will also use Visual Studio Code to make a few calls to the Image Analysis 4.0 APIs to explore features not available in Vision Studio.
 
