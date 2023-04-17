@@ -32,7 +32,7 @@ Before using Vision Studio to try out the capabilities of Image Analysis 4.0, yo
     az group create --name rg-ms-learn-vision --location eastus
     ```
 
-5. Once your resource group has been created, use the below Azure CLI command to create an Azure Cognitive Services account. Before running the command, replace the `SUFFIX` token in the Cognitive Services account name with your initials or another value to ensure the account name is globally unique.
+5. Once your resource group has been created, use the below Azure CLI command to create an Azure Cognitive Services account. Before running the command, replace the `SUFFIX` token in the Cognitive Services account name with your initials or another value to ensure the resource name is globally unique.
 
     ```azurecli
     az cognitiveservices account create --name cog-ms-learn-vision-SUFFIX --resource-group rg-ms-learn-vision --kind CognitiveServices --sku S0 --location eastus --yes
@@ -40,28 +40,28 @@ Before using Vision Studio to try out the capabilities of Image Analysis 4.0, yo
 
     Image Analysis 4.0 features are currently available in a limited number of Azure regions. Specifying `East US` ensures access to the 4.0 features from Vision Studio.
 
-6. The last resource you need to create is an Azure Storage account for hosting some of the images you will use to try out the Image Analysis 4.0 features and create your custom object detection model in the next exercise. Run the following command to create a Storage Account in the resource group you created for this exercise. Before running the command, make sure to replace the `SUFFIX` token in the Storage Account name with your initials or another value to ensure the account name is globally unique.
+6. The last resource you need to create is an Azure Storage account for hosting some of the images you will use to try out the Image Analysis 4.0 features and create your custom object detection model in the next exercise. Run the following command to create a Storage Account in the resource group you created for this exercise. Before running the command, make sure to replace the `SUFFIX` token in the Storage Account name with your initials or another value to ensure the resource name is globally unique.
 
     ```azurecli
     az storage account create -n stmslearnvisionSUFFIX -g rg-ms-learn-vision -l eastus --sku Standard_LRS
     ```
 
-7. Once your storage account has been created, use the following command to create a container for hosting your images, again making sure to replace the `SUFFIX` token in the Storage Account name with your initials or another value to ensure the account name is globally unique before running the command.
+7. Once your storage account has been created, use the following command to create a container for hosting your images. Before running the command, make sure to replace the `[YOUR_STORAGE_ACCOUNT_NAME]` token with the name you assigned to your storage account in the previous step.
 
     ```azurecli
-    az storage container create --account-name stmslearnvisionSUFFIX --name photo-album --auth-mode login
+    az storage container create --account-name [YOUR_STORAGE_ACCOUNT_NAME] --name photo-album --auth-mode login
     ```
 
-8. Create a second container for hosting the training images you will use in the next exercise. Again, replace the `SUFFIX` token in the Storage Account name with your initials or another value to ensure the account name is globally unique before running the command.
+8. Create a second container for hosting the training images you will use in the next exercise. Again, replace the `[YOUR_STORAGE_ACCOUNT_NAME]` token with the name you assigned to your storage account above.
 
     ```azurecli
-    az storage container create --account-name stmslearnvisionSUFFIX --name training-images --auth-mode login
+    az storage container create --account-name [YOUR_STORAGE_ACCOUNT_NAME] --name training-images --auth-mode login
     ```
 
-9. Repeat the above steps to create a third container for hosting the images you will use in the next exercise to evaluate your custom model. Again, replace the `SUFFIX` token in the Storage Account name with your initials or another value to ensure the account name is globally unique before running the command.
+9. Repeat the above steps to create a third container for hosting the images you will use in the next exercise to evaluate your custom model. Again, replace the `[YOUR_STORAGE_ACCOUNT_NAME]` token with the name you assigned to your storage account above.
 
     ```azurecli
-    az storage container create --account-name stmslearnvisionSUFFIX --name evaluation-images --auth-mode login
+    az storage container create --account-name [YOUR_STORAGE_ACCOUNT_NAME] --name evaluation-images --auth-mode login
     ```
 
 10. You can now close the Azure Cloud Shell pane in your browser window.
