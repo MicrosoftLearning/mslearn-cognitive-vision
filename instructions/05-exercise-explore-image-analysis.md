@@ -49,19 +49,19 @@ Before using Vision Studio to try out the capabilities of Image Analysis 4.0, yo
 7. Once your storage account has been created, use the following command to create a container for hosting your images. Before running the command, make sure to replace the `[YOUR_STORAGE_ACCOUNT_NAME]` token with the name you assigned to your storage account in the previous step.
 
     ```azurecli
-    az storage container create --account-name [YOUR_STORAGE_ACCOUNT_NAME] --name photo-album --auth-mode login
+    az storage container create --account-name [YOUR_STORAGE_ACCOUNT_NAME] --name photo-album
     ```
 
 8. Create a second container for hosting the training images you will use in the next exercise. Again, replace the `[YOUR_STORAGE_ACCOUNT_NAME]` token with the name you assigned to your storage account above.
 
     ```azurecli
-    az storage container create --account-name [YOUR_STORAGE_ACCOUNT_NAME] --name training-images --auth-mode login
+    az storage container create --account-name [YOUR_STORAGE_ACCOUNT_NAME] --name training-images
     ```
 
 9. Repeat the above steps to create a third container for hosting the images you will use in the next exercise to evaluate your custom model. Again, replace the `[YOUR_STORAGE_ACCOUNT_NAME]` token with the name you assigned to your storage account above.
 
     ```azurecli
-    az storage container create --account-name [YOUR_STORAGE_ACCOUNT_NAME] --name evaluation-images --auth-mode login
+    az storage container create --account-name [YOUR_STORAGE_ACCOUNT_NAME] --name evaluation-images
     ```
 
 10. You can now close the Azure Cloud Shell pane in your browser window.
@@ -72,7 +72,7 @@ Before moving on to trying out the Image Analysis 4.0 features from Vision Studi
 
 1. In the Azure portal browser windows, navigate to the `rg-ms-learn-vision` resource group and select the `stmslearnvisionSUFFIX` Storage Account.
 
-2. On the Storage Account page, scroll down in the left-hand navigation menu and select **Resource sharing (CORS)** under *Settings**.
+2. On the Storage Account page, scroll down in the left-hand navigation menu and select **Resource sharing (CORS)** under **Settings**.
 
     ![The Resource Sharing (CORS) menu items is highlighted under the Settings header.](../media/05-azure-portal-storage-account-cors.png)
 
