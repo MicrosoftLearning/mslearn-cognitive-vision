@@ -310,8 +310,8 @@ In this task, you use the Read API's **Extract text** capabilities to extract pr
     ```json
     "appearance": {
         "style": {
-        "name": "handwriting",
-        "confidence": 1
+            "name": "handwriting",
+            "confidence": 1
         }
     }
     ```
