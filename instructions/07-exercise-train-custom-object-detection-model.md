@@ -194,7 +194,7 @@ Using your Azure Machine Learning data-labeling project created, you will pre-la
 
     ![The Custom_Object_Detection_Labeling project is highlighted in the page breadcrumbs.](../media/07-aml-breadcrumbs-project-page.png)
 
-16. Next, you should review and approve the labels assigned to each image before generating a COCO file. The approval process allows you to check tags set by other taggers and either approve or reject them. Select the **Data** tab on the data-labeling project page to review the labels.
+16. Next, you should review and approve the labels assigned to each image before generating a COCO file. The approval process allows you to check tags set by other taggers and either approve or reject them. Select the **Data** tab on the data-labeling project page. Then on the left-hand menu, select **Review labels**. 
 
     ![The Data tab on the data-labeling project page is selected and highlighted. On the data tab, Review labels is selected and highlighted in the left-hand menu, and the approve button is highlighted for the image and tag.](../media/07-aml-data-review-labels.png)
 
