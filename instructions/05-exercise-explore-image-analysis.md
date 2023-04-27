@@ -144,6 +144,8 @@ In this task, you will connect the Cognitive Services resource you provisioned a
 
     ![The Select a resource to work with dialog is displayed with the cog-ms-learn-vision-SUFFIX Cognitive Services resource highlighted and checked. The Select as default resource button is highlighted.](../media/05-vision-studio-select-default-resource.png)
 
+Note: If you do not see your resource listed, double-check that you are using the same directory where you created your Cognitive Services resource. If you are in the correct directory and still do not see your resource, select **Create a new resource**. Name your new resource `cog-ms-learn-vision-SUFFIX-1`, select your subscription and the `rg-ms-learn-vision` resource group, select location `East US`, select Price tier `S0`, and create the resource. Going forward, keep in mind this new resource's name.  
+
 ## Generate captions for an image
 
 You are ready to use [Vision Studio](https://portal.vision.cognitive.azure.com/) to examine Image Analysis 4.0 capabilities. In this task, you look at the image captioning functionality of Azure Computer Vision. Image captions are available through the **Caption** and **Dense Captions** features in Image Analysis 4.0.
