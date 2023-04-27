@@ -154,19 +154,21 @@ You are ready to use [Vision Studio](https://portal.vision.cognitive.azure.com/)
 
     ![On the Vision Studio home page, the Image analysis tab is selected and highlighted. The Add captions to images tile is highlighted.](../media/05-vision-studio-image-analysis-add-captions-to-images.png)
 
-3. Open the folder containing the images you downloaded and unzipped and locate the file named `city-street.jpg` within the `try-it-out` folder.
+3. Under the **Try It Out** subheading, acknowledge the resource usage policy by reading and checking the box.  
+
+4. Open the folder containing the images you downloaded and unzipped and locate the file named `city-street.jpg` within the `try-it-out` folder.
 
     ![An image of a city street, with a man walking a dog.](../media/05-city-street.jpg)
 
-4. Drag the `city-street.jpg` image from the `try-it-out` folder into the **Drag and drop files here** box, or browse to the location you downloaded the file and select it.
+5. Drag the `city-street.jpg` image from the `try-it-out` folder into the **Drag and drop files here** box, or browse to the location you downloaded the file and select it.
 
     ![The box for dragging and dropping files is displayed.](../media/05-vision-studio-try-it-out-drag-and-drop-file.png)
 
-5. Observe the generated caption text, visible in the **Detected attributes** panel to the right of the image.
+6. Observe the generated caption text, visible in the **Detected attributes** panel to the right of the image.
 
     The **Caption** functionality provides a single, human-readable English sentence describing the image's content.
 
-6. Select the **JSON** tab to view the full output from the API. It should look similar to the following:
+7. Select the **JSON** tab to view the full output from the API. It should look similar to the following:
 
     ```json
     {
@@ -184,23 +186,23 @@ You are ready to use [Vision Studio](https://portal.vision.cognitive.azure.com/)
 
     The JSON output includes the text of the generated caption, a confidence score, and metadata about the file and version of the model used to perform the image analysis.
 
-7. Next, use the same image to perform **Dense captioning**. Return to the **Vision Studio** home page, and as you did before, select the **Image analysis** tab, then select the **Dense captioning** tile.
+8. Next, use the same image to perform **Dense captioning**. Return to the **Vision Studio** home page, and as you did before, select the **Image analysis** tab, then select the **Dense captioning** tile.
 
     ![The Dense captioning tile is displayed.](../media/05-vision-studio-image-analysis-dense-captioning.png)
 
     The **Dense Captions** feature of Image Analysis 4.0 differs from the **Caption** capability in that it provides multiple human-readable captions for an image, one describing the image's content and others, each covering the essential objects detected in the picture. Each detected object includes a bounding box, which defines the pixel coordinates within the image associated with the object.
 
-8. Drag the `city-street.jpg` image from the `try-it-out` folder into the **Drag and drop files here** box, or browse to the location you downloaded the file and select it.
+9. Drag the `city-street.jpg` image from the `try-it-out` folder into the **Drag and drop files here** box, or browse to the location you downloaded the file and select it.
 
     ![The box for dragging and dropping files is displayed.](../media/05-vision-studio-try-it-out-drag-and-drop-file.png)
 
-9. Hover over one of the captions in the **Detected** attributes list and observe what happens within the image.
+10. Hover over one of the captions in the **Detected** attributes list and observe what happens within the image.
 
     ![The city-street.jpg image and its captions are displayed. The third caption, "A yellow car on the street," is highlighted, and the associated bounding box in the image is highlighted with the caption displayed.](../media/05-vision-studio-dense-captioning-bounding-boxes.png)
 
     Move your mouse cursor over the other captions in the list, and notice how the bounding box shifts in the image to highlight the portion of the image used to generate the caption.
 
-10. Select the **JSON** tab and review the structure. The JSON contains the text of each caption, a confidence score, and the coordinates of the bounding box assigned to each object for which captions were generated.
+11. Select the **JSON** tab and review the structure. The JSON contains the text of each caption, a confidence score, and the coordinates of the bounding box assigned to each object for which captions were generated.
 
     ```json
     {
