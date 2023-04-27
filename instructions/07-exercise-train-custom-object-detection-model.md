@@ -154,7 +154,7 @@ Using your Azure Machine Learning data-labeling project created, you will pre-la
 
     ![The Start and Label data buttons are highlighted on the Azure Machine Learning data-labeling project toolbar.](../media/07-aml-studio-data-labeling-start-label-data.png)
 
-8. For this exercise, you will use **ML-assisted labeling**, which requires pre-labeling a subset of your images. To begin pre-labeling your pictures, select the label you want to apply under **Tags** on the right-hand side of the window, then draw a bounding box around the object in the picture. Once that is complete, select **Submit** for the image.
+8. For this exercise, you will use **ML-assisted labeling**, which requires pre-labeling a subset of your images. To begin pre-labeling your pictures, **first** select the label you want to apply under **Tags** on the right-hand side of the window, **then** draw a bounding box around the object in the picture. It is important to select the label before you draw your bounding box. Once that is complete, select **Submit** for the image.
 
     ![The image labeling dialog is displayed, with banana highlighted and selected under Tags and the bounding box around the banana in the image is highlighted.](../media/07-aml-studio-data-labeling-apply-label.png)
 
