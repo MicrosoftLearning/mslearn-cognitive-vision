@@ -6,7 +6,7 @@ durationInMinutes: 120
 ---
 Image Analysis 4.0 enables developers to build custom models leveraging the few-shot learning capabilities of Microsoft's Florence foundation model. In this exercise, you use Vision Studio to create and train a custom **object detection** model capable of identifying and locating three classes of fruit (apple, banana, and orange) within an image.
 
-**Note**: This lab is the second exercise belonging to the module **Explore Cognitive Services for Vision**. If you have not completed the first exercise, please follow [these instructions](https://microsoftlearning.github.io/mslearn-cognitive-vision/instructions/05-exercise-explore-image-analysis.html). You will need to complete the items under **Provision Azure Resources** through to **Connect your Cognitive Services Resource to Vision Studio** in order to complete this exercise. 
+**Note**: This lab is the second exercise belonging to the module **Explore Cognitive Services for Vision**. If you have not completed the first exercise, please follow [these instructions](https://microsoftlearning.github.io/mslearn-cognitive-vision/instructions/05-exercise-explore-image-analysis.html) to complete the items under **Provision Azure Resources** through to **Connect your Cognitive Services Resource to Vision Studio**. Then return to this exercise and start from the beginning to complete it. 
 
 ## Create a custom model training project
 
