@@ -144,7 +144,7 @@ In this task, you will connect the Cognitive Services resource you provisioned a
 
     ![The Select a resource to work with dialog is displayed with the cog-ms-learn-vision-SUFFIX Cognitive Services resource highlighted and checked. The Select as default resource button is highlighted.](../media/05-vision-studio-select-default-resource.png)
 
-Note: If you do not see your resource listed, double-check that you are using the same directory where you created your Cognitive Services resource. If you are in the correct directory and still do not see your resource, select **Create a new resource**. Name your new resource `cog-ms-learn-vision-SUFFIX-1`, select your subscription and the `rg-ms-learn-vision` resource group, select location `East US`, select Price tier `S0`, and create the resource. Going forward, keep in mind this new resource's name.  
+**Note**: If you do not see your resource listed, double-check that you are using the same directory where you created your Cognitive Services resource. If you are in the correct directory and still do not see your resource, select **Create a new resource**. Name your new resource `cog-ms-learn-vision-SUFFIX-1`, select your subscription and the `rg-ms-learn-vision` resource group, select location `East US`, select Price tier `S0`, and create the resource. Then select **Select as default resource** for the new resource.   
 
 ## Generate captions for an image
 
@@ -249,7 +249,7 @@ The next feature you will try is the **Extract Tags** functionality of Image Ana
 
     ![The Extract common tags from images tile is displayed.](../media/05-vision-studio-image-analysis-extract-common-tags.png)
 
-2. In the **Choose the model you want to try out**, leave **Pretrained Vision model** selected.
+2. In the **Choose the model you want to try out**, leave **Pretrained Vision model** selected. In the **Choose your language**, select **English** or a language of your preference.
 
 3. Open the folder containing the images you downloaded and unzipped and locate the file named `shopping.jpg` within the `try-it-out` folder.
 
