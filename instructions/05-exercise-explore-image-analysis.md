@@ -8,63 +8,60 @@ The Image Analysis 4.0 features available in Azure Computer Vision include numer
 
 ## Provision Azure resources
 
-Before using Vision Studio to try out the capabilities of Image Analysis 4.0, you must prepare your Azure environment by creating a few resources required to complete the exercises in this module. You will use the Azure CLI to provision and configure the following resources:
+Before using Vision Studio to try out the capabilities of Image Analysis 4.0, you must prepare your Azure environment by creating a few resources required to complete the exercises in this module. You will use the Azure portal to provision and configure the following resources:
 
 - A resource group
 - An Azure Cognitive Service account
 - An Azure Storage account
 
-1. Navigate to the [Azure portal](https://portal.azure.com/) in a web browser, then open the **Azure Cloud Shell** via the link in the navigation bar at the top of the portal.
+1. Navigate to the [Azure portal](https://portal.azure.com/) in a web browser, then select **Create a resource** to access the Azure portal Marketplace. Search for and select **Resource Group**, then select **Create**. Configure the resource with the following settings:
+- **Subscription**: *select the one you are using*
+- **Resource Group**: rg-ms-learn-vision
+- **Region**: East US
 
-    ![Screenshot of the toolbar at the top of the Microsoft Azure portal. The Azure Cloud Shell button with the command icon is highlighted.](../media/05-azure-portal-top-bar.png)
+Then select **Review + Create** and **Create**. 
 
-2. If prompted, select **Bash**.
+2. Return to the Azure portal Marketplace. Search for and select **Cognitive Services**, then select **Create**. Configure the resource with the following settings:
+- **Subscription**: *select the one you are using*
+- **Resource Group**: rg-ms-learn-vision
+- **Region**: East US
+- **Name**: cog-ms-learn-vision-SUFFIX *note: replace the SUFFIX token with your initials or another value to ensure the resource name is globally unique.*
+- **Pricing tier**: S0
 
-    ![Screenshot of Azure Cloud Shell welcome message with a prompt to choose an environment between Bash and PowerShell. Bash is selected.](../media/05-azure-cloud-shell-welcome.png)
-
-3. If prompted, select the subscription you are using for the exercises associated with this module, and then select **Create storage**.
-
-    ![Screenshot of Azure Cloud Shell welcome wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.](../media/05-azure-cloud-shell-mount-storage.png)
-
-4. At the Cloud Shell command prompt, enter the following Azure CLI command to create an Azure resource group named `rg-ms-learn-vision` in the `East US` region within your subscription:
-
-    ```azurecli
-    az group create --name rg-ms-learn-vision --location eastus
-    ```
-
-5. Once your resource group has been created, use the below Azure CLI command to create an Azure Cognitive Services account. Before running the command, replace the `SUFFIX` token in the Cognitive Services resource name with your initials or another value to ensure the resource name is globally unique.
-
-    ```azurecli
-    az cognitiveservices account create --name cog-ms-learn-vision-SUFFIX --resource-group rg-ms-learn-vision --kind CognitiveServices --sku S0 --location eastus --yes
-    ```
+Then select **Review + Create** and **Create**. 
 
     Image Analysis 4.0 features are currently available in a limited number of Azure regions. Specifying `East US` ensures access to the 4.0 features from Vision Studio.
 
-6. The last resource you need to create is an Azure Storage account for hosting some of the images you will use to try out the Image Analysis 4.0 features and create your custom object detection model in the next exercise. Run the following command to create a Storage Account in the resource group you created for this exercise. Before running the command, make sure to replace the `SUFFIX` token in the Storage Account name with your initials or another value to ensure the resource name is globally unique.
+3. The last resource you need to create is an Azure Storage account for hosting some of the images you will use to try out the Image Analysis 4.0 features and create your custom object detection model in the next exercise. Return to the Azure portal Marketplace. Search for and select **Storage Account**, then select **Create**. Configure the resource with the following settings:
+- **Subscription**: *select the one you are using*
+- **Resource Group**: rg-ms-learn-vision
+- **Storage Account Name**: stmslearnvisionSUFFIX *note: replace the `SUFFIX` token with your initials or another value to ensure the resource name is globally unique.*
+- **Region**: East US
+- **Performance**: Standard
+- **Redundancy**: *check the box 'make read access to data available'*
 
-    ```azurecli
-    az storage account create -n stmslearnvisionSUFFIX -g rg-ms-learn-vision -l eastus --sku Standard_LRS
-    ```
+Then select **Review** and **Create**.  
 
-7. Once your storage account has been created, use the following command to create a container for hosting your images. Before running the command, make sure to replace the `[YOUR_STORAGE_ACCOUNT_NAME]` token with the name you assigned to your storage account in the previous step.
+Once the resource is deployed, select **Go to Resource**.
+
+4. On your storage account resource page, create a container for hosting your images. Navigate .... Make sure to replace the `[YOUR_STORAGE_ACCOUNT_NAME]` token with the name you assigned to your storage account in the previous step.
 
     ```azurecli
     az storage container create --account-name [YOUR_STORAGE_ACCOUNT_NAME] --name photo-album
     ```
 
-8. Create a second container for hosting the training images you will use in the next exercise. Again, replace the `[YOUR_STORAGE_ACCOUNT_NAME]` token with the name you assigned to your storage account above.
+5. Create a second container for hosting the training images you will use in the next exercise. Again, replace the `[YOUR_STORAGE_ACCOUNT_NAME]` token with the name you assigned to your storage account above.
 
     ```azurecli
     az storage container create --account-name [YOUR_STORAGE_ACCOUNT_NAME] --name training-images
     ```
 
-9. Repeat the above steps to create a third container for hosting the images you will use in the next exercise to evaluate your custom model. Again, replace the `[YOUR_STORAGE_ACCOUNT_NAME]` token with the name you assigned to your storage account above.
+6. Repeat the above steps to create a third container for hosting the images you will use in the next exercise to evaluate your custom model. Again, replace the `[YOUR_STORAGE_ACCOUNT_NAME]` token with the name you assigned to your storage account above.
 
     ```azurecli
     az storage container create --account-name [YOUR_STORAGE_ACCOUNT_NAME] --name evaluation-images
     ```
 
-10. You can now close the Azure Cloud Shell pane in your browser window.
 
 ## Configure a CORS rule on the storage account
 
