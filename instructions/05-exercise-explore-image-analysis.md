@@ -62,7 +62,8 @@ Configure the resource with the following settings:
 
     ![Screenshot of the configuration screen to create a Cognitive Services resource.](../media/05-azure-portal-storage-account-deployment.png)
 
-5. On your storage account resource page, create a container for hosting your images. Navigate to the left-hand pane. Under **Data Storage**, select **Containers**.
+5. On your storage account resource page, navigate to the left-hand pane. Under **Data Storage**, select **Containers**.
+
     ![Screenshot of the Data Storage menu header with a red box around the Containers link.](../media/05-container-navigation.png)
 
 6. Create a new container by selecting **+ Container**. 
@@ -75,14 +76,14 @@ Configure the resource with the following settings:
 
     Select **Create**.
 
-6. Create a second container for hosting the training images you will use in the next exercise. Select **+ Container**. 
+7. Create a second container for hosting the training images you will use in the next exercise. Select **+ Container**. 
 Configure the container with these settings:
     - **Name**: training-images
     - **Public access level**: Container (anonymous read access for containers and blobs)
     
     Select **Create**.
 
-7. Repeat the above steps to create a third container for hosting the images you will use in the next exercise to evaluate your custom model. Select **+ Container**. 
+8. Repeat the above steps to create a third container for hosting the images you will use in the next exercise to evaluate your custom model. Select **+ Container**. 
 Configure the container with these settings:
     - **Name**: evaluation-images
     - **Public access level**: Container (anonymous read access for containers and blobs)
