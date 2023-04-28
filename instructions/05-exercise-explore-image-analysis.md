@@ -22,7 +22,7 @@ Configure the resource with the following settings:
 
     Select **Review + Create**, then select **Create**. 
 
-2. Return to the Azure portal Marketplace. Search for and select **Cognitive Services**, then select **Create**. 
+2. Return to the Azure portal Marketplace. Search for and select **Cognitive Services**. You will see several options for next steps. Scroll to the **Multipurpose** heading and select **Create** for the **Cognitive services multi-purpose account**. 
 Configure the resource with the following settings:
     - **Subscription**: *Your Azure subscription*
     - **Resource Group**: rg-ms-learn-vision
