@@ -30,7 +30,7 @@ Then select **Review + Create** and **Create**.
 
 Then select **Review + Create** and **Create**. 
 
-    Image Analysis 4.0 features are currently available in a limited number of Azure regions. Specifying `East US` ensures access to the 4.0 features from Vision Studio.
+**Note**: Image Analysis 4.0 features are currently available in a limited number of Azure regions. Specifying `East US` ensures access to the 4.0 features from Vision Studio.
 
 3. The last resource you need to create is an Azure Storage account for hosting some of the images you will use to try out the Image Analysis 4.0 features and create your custom object detection model in the next exercise. Return to the Azure portal Marketplace. Search for and select **Storage Account**, then select **Create**. Configure the resource with the following settings:
 - **Subscription**: *select the one you are using*
@@ -44,24 +44,25 @@ Then select **Review** and **Create**.
 
 Once the resource is deployed, select **Go to Resource**.
 
-4. On your storage account resource page, create a container for hosting your images. Navigate .... Make sure to replace the `[YOUR_STORAGE_ACCOUNT_NAME]` token with the name you assigned to your storage account in the previous step.
+    ![Screenshot of the storage account resource deployment button.](../media/05-azure-portal-storage-account-portal-deployment.png)
 
-    ```azurecli
-    az storage container create --account-name [YOUR_STORAGE_ACCOUNT_NAME] --name photo-album
-    ```
+4. On your storage account resource page, create a container for hosting your images. Navigate to the left-hand pane. Under **Data Storage**, select **Containers**. Select **+ Container**. Configure the container with these settings:
+**Name**: photo-album
+**Public access level**: *select Container (anonymous read access for containers and blobs)
 
-5. Create a second container for hosting the training images you will use in the next exercise. Again, replace the `[YOUR_STORAGE_ACCOUNT_NAME]` token with the name you assigned to your storage account above.
+Then select **Create**.
 
-    ```azurecli
-    az storage container create --account-name [YOUR_STORAGE_ACCOUNT_NAME] --name training-images
-    ```
+5. Create a second container for hosting the training images you will use in the next exercise. Select **+ Container**. Configure the container with these settings:
+**Name**: training-images
+**Public access level**: *select Container (anonymous read access for containers and blobs)
 
-6. Repeat the above steps to create a third container for hosting the images you will use in the next exercise to evaluate your custom model. Again, replace the `[YOUR_STORAGE_ACCOUNT_NAME]` token with the name you assigned to your storage account above.
+Then select **Create**.
 
-    ```azurecli
-    az storage container create --account-name [YOUR_STORAGE_ACCOUNT_NAME] --name evaluation-images
-    ```
+6. Repeat the above steps to create a third container for hosting the images you will use in the next exercise to evaluate your custom model. Select **+ Container**. Configure the container with these settings:
+**Name**: evaluation-images
+**Public access level**: *select Container (anonymous read access for containers and blobs)
 
+Then select **Create**.
 
 ## Configure a CORS rule on the storage account
 
