@@ -28,7 +28,7 @@ Configure the resource with the following settings:
     - **Resource Group**: rg-ms-learn-vision
     - **Region**: East US
     - **Name**: cog-ms-learn-vision-SUFFIX 
-    - *note: replace the SUFFIX token with your initials or another value to ensure the resource name is globally unique.*
+        - *note: replace the SUFFIX token with your initials or another value to ensure the resource name is globally unique.*
     - **Pricing tier**: S0
 
     Select **Review + Create**, then select **Create**. 
@@ -40,7 +40,7 @@ Configure the resource with the following settings:
     - **Subscription**: *Your Azure subscription*
     - **Resource Group**: rg-ms-learn-vision
     - **Storage Account Name**: stmslearnvisionSUFFIX 
-    - *note: replace the `SUFFIX` token with your initials or another value to ensure the resource name is globally unique.*
+        - *note: replace the `SUFFIX` token with your initials or another value to ensure the resource name is globally unique.*
     - **Region**: East US
     - **Performance**: Standard
     - **Redundancy**: *check the box 'make read access to data available'*
