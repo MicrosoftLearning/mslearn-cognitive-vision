@@ -25,6 +25,8 @@ Before using Vision Studio to try out the capabilities of Image Analysis 4.0, yo
 
     Select **Review + Create**, then select **Create**. 
 
+    ![Screenshot of the configuration screen to create a Resource Group in the Azure portal.](../media/05-resource-group-creation.png)
+
 3. Return to the Azure portal Marketplace. Search for and select **Cognitive Services**, then select **Create**. 
 
     Configure the resource with the following settings:
