@@ -49,8 +49,6 @@ Configure the resource with the following settings:
 
     Once the resource is deployed, select **Go to Resource**.
     
-    ![Screenshot of the storage account resource deployment button.](../media/05-azure-portal-storage-account-deployment.png)
-
 4. On your storage account resource page, create a container for hosting your images. Navigate to the left-hand pane. Under **Data Storage**, select **Containers**. Select **+ Container**. 
 Configure the container with these settings:
     - **Name**: photo-album
