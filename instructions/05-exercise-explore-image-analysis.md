@@ -16,7 +16,7 @@ Before using Vision Studio to try out the capabilities of Image Analysis 4.0, yo
 
 1. Navigate to the [Azure portal](https://portal.azure.com/) in a web browser, then select **Create a resource** to access the Azure portal Marketplace. Search for and select **Resource Group**, then select **Create**. 
 Configure the resource with the following settings:
-    - **Subscription**: *select the one you are using*
+    - **Subscription**: *Your Azure subscription*
     - **Resource Group**: rg-ms-learn-vision
     - **Region**: East US
 
@@ -24,7 +24,7 @@ Configure the resource with the following settings:
 
 2. Return to the Azure portal Marketplace. Search for and select **Cognitive Services**, then select **Create**. 
 Configure the resource with the following settings:
-    - **Subscription**: *select the one you are using*
+    - **Subscription**: *Your Azure subscription*
     - **Resource Group**: rg-ms-learn-vision
     - **Region**: East US
     - **Name**: cog-ms-learn-vision-SUFFIX *note: replace the SUFFIX token with your initials or another value to ensure the resource name is globally unique.*
@@ -36,7 +36,7 @@ Configure the resource with the following settings:
 
 3. The last resource you need to create is an Azure Storage account for hosting some of the images you will use to try out the Image Analysis 4.0 features and create your custom object detection model in the next exercise. Return to the Azure portal Marketplace. Search for and select **Storage Account**, then select **Create**. 
 Configure the resource with the following settings:
-    - **Subscription**: *select the one you are using*
+    - **Subscription**: *Your Azure subscription*
     - **Resource Group**: rg-ms-learn-vision
     - **Storage Account Name**: stmslearnvisionSUFFIX *note: replace the `SUFFIX` token with your initials or another value to ensure the resource name is globally unique.*
     - **Region**: East US
