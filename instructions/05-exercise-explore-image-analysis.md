@@ -14,28 +14,37 @@ Before using Vision Studio to try out the capabilities of Image Analysis 4.0, yo
 - An Azure Cognitive Service account
 - An Azure Storage account
 
-1. Navigate to the [Azure portal](https://portal.azure.com/) in a web browser, then select **Create a resource** to access the Azure portal Marketplace. Search for and select **Resource Group**, then select **Create**. 
-Configure the resource with the following settings:
+1. Navigate to the [Azure portal](https://portal.azure.com/) in a web browser, then select **Create a resource**.
+
+    ![Screenshot of the Azure portal with red box around the create a resource button.](../media/05-azure-portal-create-resource.png)
+
+2. Search for and select **Resource Group** in the Marketplace, then select **Create**. Configure the resource group with the following settings:
     - **Subscription**: *Your Azure subscription*
     - **Resource Group**: rg-ms-learn-vision
-    - **Region**: East US
+    - **Region**: (US) East US
 
     Select **Review + Create**, then select **Create**. 
 
-2. Return to the Azure portal Marketplace. Search for and select **Cognitive Services**. You will see several options for next steps. Scroll to the **Multipurpose** heading and select **Create** for the **Cognitive services multi-purpose account**. 
-Configure the resource with the following settings:
+    ![Screenshot of the configuration screen to create a Resource Group in the Azure portal.](../media/05-resource-group-creation.png)
+
+3. Return to the Azure portal Marketplace. Search for and select **Cognitive Services**, then select **Create**. 
+
+    Configure the resource with the following settings:
     - **Subscription**: *Your Azure subscription*
     - **Resource Group**: rg-ms-learn-vision
     - **Region**: East US
     - **Name**: cog-ms-learn-vision-SUFFIX 
         - *note: replace the SUFFIX token with your initials or another value to ensure the resource name is globally unique.*
     - **Pricing tier**: S0
+    - *Acknowledge that you have read and understood the terms by checking the box.*
 
     Select **Review + Create**, then select **Create**. 
+    
+    ![Screenshot of the configuration screen to create a Cognitive Services resource.](../media/05-cognitive-services-configuration.png)
 
-**Note**: Image Analysis 4.0 features are currently available in a limited number of Azure regions. Specifying `East US` ensures access to the 4.0 features from Vision Studio.
+    **Note**: Image Analysis 4.0 features are currently available in a limited number of Azure regions. Specifying `East US` ensures access to the 4.0 features from Vision Studio.
 
-3. The last resource you need to create is an Azure Storage account for hosting some of the images you will use to try out the Image Analysis 4.0 features and create your custom object detection model in the next exercise. Return to the Azure portal Marketplace. Search for and select **Storage Account**, then select **Create**. 
+4. The last resource you need to create is an Azure Storage account for hosting some of the images you will use to try out the Image Analysis 4.0 features and create your custom object detection model in the next exercise. Return to the Azure portal Marketplace. Search for and select **Storage Account**, then select **Create**. 
 Configure the resource with the following settings:
     - **Subscription**: *Your Azure subscription*
     - **Resource Group**: rg-ms-learn-vision
@@ -47,23 +56,33 @@ Configure the resource with the following settings:
 
     Select **Review** and **Create**.  
 
+    ![Screenshot of the configuration screen to create a Storage Account.](../media/05-storage-account-creation.png)
+
     Once the resource is deployed, select **Go to Resource**.
+
+    ![Screenshot of the configuration screen to create a Cognitive Services resource.](../media/05-azure-portal-storage-account-deployment.png)
+
+5. On your storage account resource page, create a container for hosting your images. Navigate to the left-hand pane. Under **Data Storage**, select **Containers**.
+    ![Screenshot of the Data Storage menu header with a red box around the Containers link.](../media/05-container-navigation.png)
+
+6. Create a new container by selecting **+ Container**. 
     
-4. On your storage account resource page, create a container for hosting your images. Navigate to the left-hand pane. Under **Data Storage**, select **Containers**. Select **+ Container**. 
-Configure the container with these settings:
+    ![Screenshot of the create a container button on the Containers page.](../media/05-new-container.png)
+    
+    Configure the container with these settings:
     - **Name**: photo-album
     - **Public access level**: Container (anonymous read access for containers and blobs)
 
     Select **Create**.
 
-5. Create a second container for hosting the training images you will use in the next exercise. Select **+ Container**. 
+6. Create a second container for hosting the training images you will use in the next exercise. Select **+ Container**. 
 Configure the container with these settings:
     - **Name**: training-images
     - **Public access level**: Container (anonymous read access for containers and blobs)
     
     Select **Create**.
 
-6. Repeat the above steps to create a third container for hosting the images you will use in the next exercise to evaluate your custom model. Select **+ Container**. 
+7. Repeat the above steps to create a third container for hosting the images you will use in the next exercise to evaluate your custom model. Select **+ Container**. 
 Configure the container with these settings:
     - **Name**: evaluation-images
     - **Public access level**: Container (anonymous read access for containers and blobs)
