@@ -14,55 +14,61 @@ Before using Vision Studio to try out the capabilities of Image Analysis 4.0, yo
 - An Azure Cognitive Service account
 - An Azure Storage account
 
-1. Navigate to the [Azure portal](https://portal.azure.com/) in a web browser, then select **Create a resource** to access the Azure portal Marketplace. Search for and select **Resource Group**, then select **Create**. Configure the resource with the following settings:
-- **Subscription**: *select the one you are using*
-- **Resource Group**: rg-ms-learn-vision
-- **Region**: East US
+1. Navigate to the [Azure portal](https://portal.azure.com/) in a web browser, then select **Create a resource** to access the Azure portal Marketplace. Search for and select **Resource Group**, then select **Create**. 
+Configure the resource with the following settings:
+    - **Subscription**: *select the one you are using*
+    - **Resource Group**: rg-ms-learn-vision
+    - **Region**: East US
 
-Then select **Review + Create** and **Create**. 
+    Then select **Review + Create**, then select **Create**. 
 
-2. Return to the Azure portal Marketplace. Search for and select **Cognitive Services**, then select **Create**. Configure the resource with the following settings:
-- **Subscription**: *select the one you are using*
-- **Resource Group**: rg-ms-learn-vision
-- **Region**: East US
-- **Name**: cog-ms-learn-vision-SUFFIX *note: replace the SUFFIX token with your initials or another value to ensure the resource name is globally unique.*
-- **Pricing tier**: S0
+2. Return to the Azure portal Marketplace. Search for and select **Cognitive Services**, then select **Create**. 
+Configure the resource with the following settings:
+    - **Subscription**: *select the one you are using*
+    - **Resource Group**: rg-ms-learn-vision
+    - **Region**: East US
+    - **Name**: cog-ms-learn-vision-SUFFIX *note: replace the SUFFIX token with your initials or another value to ensure the resource name is globally unique.*
+    - **Pricing tier**: S0
 
-Then select **Review + Create** and **Create**. 
+    Then select **Review + Create**, then select **Create**. 
 
 **Note**: Image Analysis 4.0 features are currently available in a limited number of Azure regions. Specifying `East US` ensures access to the 4.0 features from Vision Studio.
 
-3. The last resource you need to create is an Azure Storage account for hosting some of the images you will use to try out the Image Analysis 4.0 features and create your custom object detection model in the next exercise. Return to the Azure portal Marketplace. Search for and select **Storage Account**, then select **Create**. Configure the resource with the following settings:
-- **Subscription**: *select the one you are using*
-- **Resource Group**: rg-ms-learn-vision
-- **Storage Account Name**: stmslearnvisionSUFFIX *note: replace the `SUFFIX` token with your initials or another value to ensure the resource name is globally unique.*
-- **Region**: East US
-- **Performance**: Standard
-- **Redundancy**: *check the box 'make read access to data available'*
+3. The last resource you need to create is an Azure Storage account for hosting some of the images you will use to try out the Image Analysis 4.0 features and create your custom object detection model in the next exercise. Return to the Azure portal Marketplace. Search for and select **Storage Account**, then select **Create**. 
+Configure the resource with the following settings:
+    - **Subscription**: *select the one you are using*
+    - **Resource Group**: rg-ms-learn-vision
+    - **Storage Account Name**: stmslearnvisionSUFFIX *note: replace the `SUFFIX` token with your initials or another value to ensure the resource name is globally unique.*
+    - **Region**: East US
+    - **Performance**: Standard
+    - **Redundancy**: *check the box 'make read access to data available'*
 
-Then select **Review** and **Create**.  
+    Then select **Review** and **Create**.  
 
-Once the resource is deployed, select **Go to Resource**.
+    Once the resource is deployed, select **Go to Resource**.
+    
+    ![Screenshot of the storage account resource deployment button.](../media/05-azure-portal-storage-account-deployment.png)
 
-    ![Screenshot of the storage account resource deployment button.](../media/05-azure-portal-storage-account-portal-deployment.png)
+4. On your storage account resource page, create a container for hosting your images. Navigate to the left-hand pane. Under **Data Storage**, select **Containers**. Select **+ Container**. 
+Configure the container with these settings:
+    - **Name**: photo-album
+    - **Public access level**: Container (anonymous read access for containers and blobs)
 
-4. On your storage account resource page, create a container for hosting your images. Navigate to the left-hand pane. Under **Data Storage**, select **Containers**. Select **+ Container**. Configure the container with these settings:
-**Name**: photo-album
-**Public access level**: *select Container (anonymous read access for containers and blobs)
+    Then select **Create**.
 
-Then select **Create**.
+5. Create a second container for hosting the training images you will use in the next exercise. Select **+ Container**. 
+Configure the container with these settings:
+    - **Name**: training-images
+    - **Public access level**: Container (anonymous read access for containers and blobs)
+    
+    Then select **Create**.
 
-5. Create a second container for hosting the training images you will use in the next exercise. Select **+ Container**. Configure the container with these settings:
-**Name**: training-images
-**Public access level**: *select Container (anonymous read access for containers and blobs)
+6. Repeat the above steps to create a third container for hosting the images you will use in the next exercise to evaluate your custom model. Select **+ Container**. 
+Configure the container with these settings:
+    - **Name**: evaluation-images
+    - **Public access level**: Container (anonymous read access for containers and blobs)
 
-Then select **Create**.
-
-6. Repeat the above steps to create a third container for hosting the images you will use in the next exercise to evaluate your custom model. Select **+ Container**. Configure the container with these settings:
-**Name**: evaluation-images
-**Public access level**: *select Container (anonymous read access for containers and blobs)
-
-Then select **Create**.
+    Then select **Create**.
 
 ## Configure a CORS rule on the storage account
 
