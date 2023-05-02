@@ -84,6 +84,9 @@ The first step in training a new model is to create datasets consisting of the i
 
 COCO files are used to convey the labeling information associated with your images. The easiest way to generate a COCO file is to create an Azure Machine Learning data-labeling project. In this task, you will use Vision Studio to create an Azure Machine Learning workspace and set up a data-labeling workflow.
 
+>[!NOTE]
+>Along with other Vision capabilities, Image Analysis 4.0 model customization is in public preview. The product team would like to hear from users about the experience. If you have comments about the Azure ML data-labeling project, you can submit feedback [here](https://go.microsoft.com/fwlink/?linkid=2174290). 
+
 1. On the **training_images** dataset page in Vision Studio, select **Create Azure ML Data Labeling Project**.
 
     ![The Create Azure ML Data Labeling Project button is highlighted on the training_images dataset page.](../media/07-vision-studio-create-an-azure-ml-data-labeling-project.png)
