@@ -1,6 +1,6 @@
 ---
 uid: learn.wwl.explore-identity-azure-active-directory.exercise-train-custom-object-detection-model
-title: Train a custom object detection model using Vision Studio and Image Analysis 4.0
+title: Train a custom object detection model with Vision Studio and Image Analysis 4.0
 description: Vision Studio allows developers to create and train custom object detection and image classification models leveraging the few-shot learning power of Microsoft's Florence foundation model.
 durationInMinutes: 60
 ---
